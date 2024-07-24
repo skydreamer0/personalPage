@@ -1,0 +1,51 @@
+/* responsive.css */
+
+/* 適用於平板設備 */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* 適用於手機設備 */
+@media(max-width: 480px) {
+    header {
+        padding-bottom: 10px;
+    }
+
+    header #branding h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    header nav li {
+        padding: 0 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
