@@ -1,43 +1,117 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於我 - 您的姓名</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>About Me | George</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <!-- 同 index.html 的導航欄 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">George</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Professional Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <h1>關於我</h1>
+    <main class="container mt-5">
+        <h1> </h1>
+        <h1>About Me</h1>
         <section id="personal-info">
-            <h2>個人簡介</h2>
-            <p>在此詳細介紹您的背景、教育經歷和職業目標。</p>
+            <h2>Personal Introduction</h2>
+            <p>I am a licensed pharmacist with five years of experience in a medical center. Skilled in identifying issues and utilizing various resources to collaborate effectively in team problem-solving, with multidisciplinary teamwork and leadership experience. I have successfully organized and led various activities, including publication development, mass CPR certification exams, beach clean-up events, and various competitions.</p>
         </section>
-        <section id="education">
-            <h2>教育背景</h2>
+        <section id="achievements" class="mt-5">
+            <h2>Achievements and Contributions</h2>
             <ul>
-                <li>學位 - 學校名稱 (畢業年份)</li>
-                <!-- 添加更多教育經歷 -->
+                <li>📊 Poster Presentation at ISPOR Europe Conference 2022</li>
+                <li>💊 Collaborated with physicians to revise dosages, correcting unsuitable patient test values, resulting in updated prescriptions and enhanced patient safety</li>
+                <li>🔄 Participated in a multidisciplinary medication dispensing process improvement project, successfully simplifying the process and 100% resolving accounting issues</li>
+                <li>🤖 Utilized generative AI to streamline operational workflows from ten steps to two, boosting efficiency by 80% and significantly reducing processing time</li>
+                <li>📈 Worked with supervisors to create a generative AI program that converts unstructured electronic medical records into structured data and charts, streamlining clinical workflows and reducing clinical workload by 30%</li>
             </ul>
         </section>
-        <section id="certifications">
-            <h2>專業認證</h2>
+        <section id="skills" class="mt-5">
+            <h2>Core Skills</h2>
             <ul>
-                <li>認證名稱 (獲得年份)</li>
-                <!-- 添加更多認證 -->
+                <li>🧬 Pharmacology Knowledge</li>
+                <li>🕵️‍♂️ Detail-Oriented Problem Solving</li>
+                <li>🧠 Strategic Thinking</li>
+                <li>🤝 Collaborative Teamwork</li>
+                <li>🗣️ Effective Communication Skills</li>
+                <li>📊 Data-Driven Decision Making</li>
+            </ul>
+        </section>
+        <section id="experience" class="mt-5">
+            <h2>Professional Experience</h2>
+            <h3>Chang Gung Memorial Hospital</h3>
+            <p>Pharmacist (March 2019 - July 2024)</p>
+            <p>Current Department: Chemotherapy Pharmacy (October 2021 - July 2024)</p>
+            <ul>
+                <li>📊 Poster Presentation at ISPOR Conference 2022</li>
+                <li>🔄 Participated in an interdepartmental Quality Control Circle (QCC) initiative to improve the TACE chemotherapy medication dispensing process</li>
+                <li>🤖 Utilized generative AI to streamline operational workflows, boosting efficiency by 80%</li>
+                <li>📋 Developed an automated calculation and printing process for chemotherapy medication tracking sheets</li>
+                <li>🏷️ Led a medication labeling system project, integrating essential drug information and QR codes into label printing using generative AI technology</li>
+                <li>🗂️ Collaborated with supervisors and clinical pharmacists on a clinical data structuring initiative using generative AI technology</li>
+            </ul>
+        </section>
+        <section id="education" class="mt-5">
+            <h2>Educational Background</h2>
+            <ul>
+                <li>Tajen University, Bachelor of Pharmacy (BPharm), Pharmacy (2013 - 2018)</li>
+                <li>Tainan First Senior High School (2010 - 2013)</li>
+            </ul>
+        </section>
+        <section id="certifications" class="mt-5">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Pharmacist Certification, Ministry of Health (October 2019)</li>
+                <li>TOEIC (Listening and Reading) Score: 780 (The TOEIC Program)</li>
+            </ul>
+        </section>
+        <section id="military-service" class="mt-5">
+            <h2>Military Service</h2>
+            <p>Republic of China Army, Conscription (October 2018 - February 2019)</p>
+        </section>
+        <section id="internship" class="mt-5">
+            <h2>Internship</h2>
+            <p>Kuo General Hospital, Pharmacy Intern (June 2016 - October 2016)</p>
+        </section>
+        <section id="student-affairs" class="mt-5">
+            <h2>Dean of Student Affairs</h2>
+            <p>Tajen University Pharmaceutical Students' Association (TPSA) (September 2014 - July 2015)</p>
+            <ul>
+                <li>❤️ Coordinated a CPR Certification Program in collaboration with the Ministry of Education, certifying over 125 participants</li>
+                <li>📰 Founded "仁者藥報," an academic departmental newspaper</li>
+                <li>🌍 Led a coastal clean-up initiative at Kenting National Park</li>
+                <li>🥼 Organized the "Patient Counseling Exam," creating training modules and organizing a cross-institutional competition</li>
+                <li>🏥 Coordinated a Gross Anatomy excursion at Kaohsiung Medical University</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <!-- 同 index.html 的頁腳 -->
+        Copyright © 2024 George Hsiao. All rights reserved.
     </footer>
 
-    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

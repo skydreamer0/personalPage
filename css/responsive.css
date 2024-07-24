@@ -1,51 +1,178 @@
 /* responsive.css */
 
-/* 適用於平板設備 */
-@media(max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    header {
-        padding-bottom: 20px;
-    }
-
+/* 大屏幕設備 (小於1200px) */
+@media (max-width: 1200px) {
     .container {
         width: 90%;
     }
 }
 
-/* 適用於手機設備 */
-@media(max-width: 480px) {
-    header {
-        padding-bottom: 10px;
-    }
-
-    header #branding h1 {
-        font-size: 24px;
-    }
-
-    header nav {
-        margin-top: 20px;
-    }
-
-    header nav li {
-        padding: 0 10px;
-    }
-
+/* 中等屏幕設備 (小於992px) */
+@media (max-width: 992px) {
     .container {
         width: 95%;
     }
 
-    h1 {
-        font-size: 28px;
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 2rem;
+    }
+
+    .skill-cards, .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 平板設備 (小於768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none; /* 隱藏導航欄 */
+    }
+
+    /* 添加漢堡菜單按鈕 */
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 2rem 5%;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 1.8rem;
+    }
+}
+
+/* 手機設備 (小於576px) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .skill-cards, .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 小型手機設備 (小於400px) */
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* 確保在較小的屏幕上文字仍然可讀 */
+@media (max-height: 600px) {
+    .hero-content {
+        padding-top: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/* 針對橫屏模式的調整 */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        padding: 1.5rem 0;
+    }
+}
+
+/* 提高較大設備上的可讀性 */
+@media (min-width: 1400px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
     }
 }

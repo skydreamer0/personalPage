@@ -3,38 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的姓名 - 醫院藥師 | 醫藥代表候選人</title>
+    <title>George Hsiao|MR Candidate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="about.html">關於我</a></li>
-                <li><a href="experience.html">工作經驗</a></li>
-                <li><a href="skills.html">專業技能</a></li>
-                <li><a href="projects.html">項目案例</a></li>
-                <li><a href="contact.html">聯繫方式</a></li>
-            </ul>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">George</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Professional Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <main>
-        <section id="hero">
-            <h1>您的姓名</h1>
-            <h2>醫院藥師 | 醫藥代表候選人</h2>
-            <p>簡短的個人介紹或標語</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>George Hsiao</h1>
+                <h2>Pharmacist | MR Candidate</h2>
+                <p>Combining pharmaceutical expertise with AI </p>
+                <p>to pioneer innovative healthcare solutions </p>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
         </section>
 
-        <!-- 其他部分可以根據需要添加 -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile-photo.jpg" alt="George Hsiao" class="profile-photo">
+                <p>我是一名擁有豐富經驗的醫院藥師,致力於...</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>工作經驗</h2>
+            <div class="timeline">
+                <!-- 使用時間軸樣式展示工作經驗 -->
+                <div class="timeline-item">
+                    <h3>高級藥師 - XX醫院</h3>
+                    <p class="date">2018 - 現在</p>
+                    <p>負責藥品管理、患者諮詢等工作...</p>
+                </div>
+                <!-- 添加更多工作經驗 -->
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>專業技能</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <img src="images/icon-pharmacy.svg" alt="藥品管理">
+                    <h3>藥品管理</h3>
+                    <p>精通藥品庫存管理和質量控制</p>
+                </div>
+                <!-- 添加更多技能卡片 -->
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>項目案例</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="項目1">
+                    <h3>藥品安全使用推廣計劃</h3>
+                    <p>在社區中推廣安全用藥知識...</p>
+                </div>
+                <!-- 添加更多項目 -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder=" Name">
+                <input type="email" placeholder=" E-mail">
+                <textarea placeholder=" Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 您的姓名. 版權所有。</p>
+        Copyright © 2024 George Hsiao. All rights reserved.
     </footer>
 
-    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
