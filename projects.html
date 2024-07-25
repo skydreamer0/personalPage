@@ -7,8 +7,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <style>
+        .thumbnail {
+            width: 150px; /* 設置縮圖的寬度 */
+            height: auto; /* 保持圖像比例 */
+            transition: transform 0.3s ease; /* 縮放效果過渡 */
+        }
+        .thumbnail:hover {
+            transform: scale(1.1); /* 滑鼠懸停時放大效果 */
+        }
+        .lightbox-back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,34 +46,124 @@
                     <li class="nav-item"><a class="nav-link" href="experience.html">Professional Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <h1>項目案例</h1>
-        <section class="project">
-            <h2>項目名稱</h2>
-            <p>項目簡介</p>
-            <ul>
+    
+    <main class="container">
+        
+        <h1 class="my-4">Projects</h1>
+        
+        <section class="project mb-5">
+            <h2 class="project-title"><i class="fas fa-chart-line fa-3x-alt"></i> Poster Presentation at ISPOR Conference 2022</h2>
+            <p class="project-description">Topic: “Effectiveness Analysis of CPOE Implementation in Preventing Duplicate Medication: An Evidence From a Single Medical Center in Taiwan”. Emphasized the critical role of pharmacists in establishing CPOE and their intervention in enhancing medication safety.</p>
+            <ul class="project-details">
                 <li>項目細節1</li>
                 <li>項目細節2</li>
-                <!-- 添加更多項目細節 -->
             </ul>
+            <div class="project-photos">
+                <a href="images/ISPOR.jpg" data-lightbox="project1" data-title="Project photo 1">
+                    <img src="images/ISPOR.jpg" alt="Project photo 1" class="img-fluid thumbnail">
+                </a>
+                <a href="images/ISPOR2.jpg" data-lightbox="project1" data-title="Project photo 2">
+                    <img src="images/ISPOR2.jpg" alt="Project photo 2" class="img-fluid thumbnail">
+                </a>
+            </div>
+           
         </section>
-        <!-- 可以添加更多項目案例部分 -->
+        
+        <section class="project mb-5">
+            <h2 class="project-title"> <i class="fas fa-sync-alt"></i> Quality Control Circle: Revamped Chemotherapy Dispensing Process</h2>
+            <p class="project-description">Participated in an interdepartmental QCC initiative to improve the TACE chemotherapy medication dispensing process. Addressed a complex and error-prone requisition workflow. Identified critical risk points and executed precise enhancements. Result: Significant mitigation of inventory losses.</p>
+            <ul class="project-details">
+                <li>項目細節1</li>
+                <li>項目細節2</li>
+            </ul>
+            <div class="project-photos">
+                <i class="fas fa-recycle fa-3x"></i>
+                <i class="fas fa-prescription-bottle-alt fa-3x"></i>
+            </div>
+        </section>
+        
+        <section class="project mb-5">
+            <h2 class="project-title"><i class="fas fa-robot fa-3x-alt"></i> Streamlined Operational Workflow System</h2>
+            <p class="project-description">Utilized generative AI to streamline operational workflows from ten steps to two. Result: Boosted efficiency by 80%, significantly reduced processing time, and received widespread acclaim.</p>
+            <ul class="project-details">
+                <li>項目細節1</li>
+                <li>項目細節2</li>
+            </ul>
+            <div class="project-photos">
+                
+                <i class="fas fa-tasks fa-3x"></i>
+            </div>
+        </section>
+        
+        <section class="project mb-5">
+            <h2 class="project-title"><i class="fas fa-calculator fa-3x-alt"></i> Automated Calculation and Printing Process</h2>
+            <p class="project-description">Developed a process for chemotherapy medication tracking sheets through co-creation with generative AI technology. Result: Reduced human calculation errors, significantly improved accuracy and reliability, and enhanced patient safety.</p>
+            <ul class="project-details">
+                <li>項目細節1</li>
+                <li>項目細節2</li>
+            </ul>
+            <div class="project-photos">
+              
+                <i class="fas fa-print fa-3x"></i>
+            </div>
+        </section>
+        
+        <section class="project mb-5">
+            <h2 class="project-title">🏷️ Medication Labeling System</h2>
+            <p class="project-description">Led a project to interface medication label printers with essential drug information and QR codes using generative AI technology. Result: Improved drug recognition, enhanced safety, streamlined the labeling process, and ensured compliance with hospital standards.</p>
+            <ul class="project-details">
+                <li>項目細節1</li>
+                <li>項目細節2</li>
+            </ul>
+            <div class="project-photos">
+                <i class="fas fa-tags fa-3x"></i>
+                <i class="fas fa-qrcode fa-3x"></i>
+                
+            </div>
+        </section>
+        
+        <section class="project mb-5">
+            <h2 class="project-title">🗂️ Clinical Data Structuring Initiative</h2>
+            <p class="project-description">Collaborated with supervisors and clinical pharmacists to develop a system using generative AI technology to convert unstructured electronic medical records into structured, accessible formats. Result: Enhanced clinical pharmacists’ efficiency by providing quick access to critical patient data in visual and structured formats.</p>
+            <ul class="project-details">
+                <li>項目細節1</li>
+                <li>項目細節2</li>
+            </ul>
+            <div class="project-photos">
+                <i class="fas fa-database fa-3x"></i>
+                <i class="fas fa-file-alt fa-3x"></i>
+            </div>
+        </section>
+        
     </main>
 
-    
-   
-    <footer>
-        Copyright © 2024 George Hsiao. All rights reserved.
-    </footer>
-
-   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="path/to/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+
+        $(document).on('lightbox:opened', function() {
+            if ($('#lightbox-back-button').length === 0) {
+                $('<button id="lightbox-back-button" class="lightbox-back-button">Back</button>')
+                    .appendTo('body')
+                    .on('click', function() {
+                        window.history.back();
+                    });
+            }
+        });
+
+        $(document).on('lightbox:closed', function() {
+            $('#lightbox-back-button').remove();
+        });
+    </script>
 </body>
 </html>
