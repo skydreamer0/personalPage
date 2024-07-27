@@ -9,7 +9,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+main.container {
+    padding-top: 70px; /* 根據您的導航欄高度調整 */
+}
 .container {
     width: 80%;
     margin: auto;

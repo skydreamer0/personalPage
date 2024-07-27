@@ -6,3 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         navList.classList.toggle('show');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navHeight = document.querySelector('nav').offsetHeight;
+    document.querySelector('main').style.paddingTop = navHeight + 'px';
+});
