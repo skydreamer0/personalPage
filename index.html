@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+        <style>
+        .thumbnail {
+            width: 150px; /* 設置縮圖的寬度 */
+            height: auto; /* 保持圖像比例 */
+            transition: transform 0.3s ease; /* 縮放效果過渡 */
+        }
+        .thumbnail:hover {
+            transform: scale(1.1); /* 滑鼠懸停時放大效果 */
+        }
+        .lightbox-back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .project-photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+        .project-photos a {
+            flex: 0 0 auto;
+        }
+        .project-photos img {
+            width: 150px; /* 與 .thumbnail 的寬度一致 */
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -72,24 +108,24 @@
                         <ul class="achievements">
                             <li class="achievement">
                                 <i class="fas fa-chart-line"></i>
-                                <strong>Poster Presentation at ISPOR Conference 2022</strong>
+                                <strong>  Poster Presentation at ISPOR Conference 2022</strong>
                                 <p>Effectiveness Analysis of CPOE Implementation in Preventing Duplicate Medication</p>
                             </li>
                             <li class="achievement">
                                 <i class="fas fa-sync-alt"></i>
-                                <strong>Quality Control Circle: Revamped Chemotherapy Dispensing Process</strong>
+                                <strong>  Quality Control Circle: Revamped Chemotherapy Dispensing Process</strong>
                                 <p>Improved TACE chemotherapy medication dispensing process, mitigating inventory losses</p>
                             </li>
                 
                             <li class="achievement">
                                 <i class="fas fa-robot"></i>
-                                <strong>Streamlined Operational Workflow System</strong>
+                                <strong>  Streamlined Operational Workflow System</strong>
                                 <p>Utilized generative AI to streamline operational workflows from ten steps to two.</p>
                                 <p class="result">Result: Boosted efficiency by 80%, significantly reduced processing time, and received widespread acclaim.</p>
                             </li>
                             <li class="achievement">
                                 <i class="fas fa-folder-open"></i>
-                                <strong>Clinical Data Structuring Initiative</strong>
+                                <strong>  Clinical Data Structuring Initiative</strong>
                                 <p>Collaborated with supervisors and clinical pharmacists to develop a system using generative AI technology to convert unstructured electronic medical records into structured, accessible formats.</p>
                                 <p class="result">Result: Enhanced clinical pharmacists' efficiency by providing quick access to critical patient data in visual and structured formats.</p>
                             </li>
@@ -126,27 +162,45 @@
                                 <i class="fas fa-heart"></i>
                                 <strong>CPR Certification Program Coordination</strong>
                                 <p>Orchestrated a CPR Certification Program in strategic collaboration with the Ministry of Education. Invited Red Cross instructors for expert guidance, successfully certifying over 125 participants.</p>
+                                
+                                <div class="project-photos">
+                                <a href="images/CPR1.png" data-lightbox="CPR" data-title="CPR">
+                                    <img src="images/CPR1.png" alt="CPR" class="img-fluid thumbnail">
+                                </a>
+                                <a href="images/CPR.jpg" data-lightbox="CPR" data-title="CPR">
+                                    <img src="images/CPR.jpg" alt="CPR" class="img-fluid thumbnail">
+                                </a>
+                            </div>
+
                             </li>
                             <li class="achievement">
                                 <i class="fas fa-newspaper"></i>
                                 <strong>Academic Newspaper Founder</strong>
+                                
                                 <p>Established "仁者藥報," an academic departmental newspaper serving as an informational hub for students, disseminating academic insights, departmental news, and events.</p>
+                                <a href="images/newspaper.jpg" data-lightbox="newspaper" data-title="newspaper">
+                                    <img src="images/newspaper.jpg" alt="newspaper" class="img-fluid thumbnail">
+                                </a>
                             </li>
-                            <li class="achievement">
-                                <i class="fas fa-globe"></i>
-                                <strong>Environmental Sustainability Advocate</strong>
-                                <p>Collaboratively led a coastal clean-up initiative at Kenting National Park in partnership with the Health-Care Dept., emphasizing environmental sustainability and community involvement.</p>
-                            </li>
+                            
                             <li class="achievement">
                                 <i class="fas fa-user-md"></i>
                                 <strong>Patient Counseling Exam Organizer</strong>
                                 <p>Spearheaded the "Patient Counseling Exam," devising comprehensive training modules and organizing a cross-institutional competition to elevate clinical communication skills.</p>
+                                
+                                <div class="project-photos">
+                                    <a href="images/PCE (1).png" data-lightbox="PCE" data-title="PCE">
+                                        <img src="images/PCE (1).png" alt="PCE" class="img-fluid thumbnail">
+                                    </a>
+                                    <a href="images/PCE (2).png" data-lightbox="PCE" data-title="PCE">
+                                        <img src="images/PCE (2).png" alt="PCE" class="img-fluid thumbnail">
+                                    </a>
+                                    <a href="images/PCE (3).png" data-lightbox="PCE" data-title="PCE">
+                                        <img src="images/PCE (3).png" alt="PCE" class="img-fluid thumbnail">
+                                    </a>
+                                </div>
                             </li>
-                            <li class="achievement">
-                                <i class="fas fa-hospital"></i>
-                                <strong>Gross Anatomy Excursion Organizer</strong>
-                                <p>Coordinated an exclusive Gross Anatomy excursion at Kaohsiung Medical University, providing hands-on educational exposure to future pharmacists.</p>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -157,19 +211,31 @@
             <h2>Education</h2>
             <div class="education-cards">
                 <div class="education-card">
-                    <img src="images/university_logo.png" alt="大仁科技大學標誌">
-                    <h3>大仁科技大學</h3>
-                    <p>Bachelor of Pharmacy - BPharm, Pharmacy</p>
-                    <p>2013 - 2018</p>
-                    <p>Activities and Societies：Pharmacy Students' Association, Numerology Society, Swimming Club</p>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="images/university_logo.png" alt="大仁科技大學標誌">
+                        </div>
+                        <div class="card-info">
+                            <h3>大仁科技大學</h3>
+                            <p>Bachelor of Pharmacy - BPharm, Pharmacy</p>
+                            <p>2013 - 2018</p>
+                            <p>Activities and Societies：Pharmacy Students' Association, Numerology Society, Swimming Club</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="education-card">
-                    <img src="images/tainan_high_school_logo.png" alt="台南一中標誌">
-                    <h3>台南一中</h3>
-                    <p>Senior High School</p>
-                    <p>2010 - 2013</p>
-                    <p>Activities and Societies：Biology Club</p>
-                    <p>Chief Operations Officer | Biology Club social media editor, photography and data preservation</p>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="images/tainan_high_school_logo.png" alt="台南一中標誌">
+                        </div>
+                        <div class="card-info">
+                            <h3>台南一中</h3>
+                            <p>Senior High School</p>
+                            <p>2010 - 2013</p>
+                            <p>Activities and Societies：Biology Club</p>
+                            <p>Chief Operations Officer | Biology Club social media editor, photography and data preservation</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,20 +244,33 @@
             <h2>Certification</h2>
             <div class="certification-cards">
                 <div class="certification-card">
-                    
-                    <h3>Pharmacist License </h3>
-                    
-                    <p>於 2019年10月 頒發</p>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <a href="images/License.png" data-lightbox="PharmacistLicense" data-title="Pharmacist License">
+                                <img src="images/License.png" alt="Pharmacist License" class="img-fluid thumbnail">
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <h3>Pharmacist License</h3>
+                            <p>September 2018</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="certification-card">
-                    <img src="images/toeic_logo.png" alt="The TOEIC Program標誌">
-                    <h3>TOEIC (Listening and Reading)</h3>
-                    <p>Grade: 780</p>
-                    <p>Date:2024/6/30</p>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <a href="images/TOEIC.jpg" data-lightbox="TOEIC" data-title="TOEIC Score">
+                                <img src="images/TOEIC.jpg" alt="TOEIC" class="img-fluid thumbnail">
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <h3>TOEIC</h3>
+                            <p>June 2024</p>
+                            <p>Grade: 780</p>
+                        </div>
+                    </div>
                 </div>
-                <a href="images/INFUSOR4.jpg" data-lightbox="project1" data-title="Project photo 1">
-                    <img src="images/INFUSOR4.jpg" alt="Project photo 1" class="img-fluid thumbnail">
-                </a>
             </div>
         </section>
         
@@ -217,13 +296,13 @@
         Copyright © 2024 George Hsiao. All rights reserved.
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/lightbox-plus-jquery.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/lightbox.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Lightbox JavaScript -->
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>

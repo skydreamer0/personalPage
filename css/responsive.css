@@ -34,8 +34,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* 平板設備 (小於768px) */
 @media (max-width: 768px) {
     header {
         padding: 1rem;
@@ -82,56 +80,61 @@
         font-size: 1.8rem;
     }
 }
-
 /* 手機設備 (小於576px) */
 @media (max-width: 576px) {
-    .hero-content h1 {
-        font-size: 2.2rem;
+    .navbar {
+        padding: 0.5rem 1rem; /* 減少導航欄的內距 */
     }
 
-    .hero-content h2 {
-        font-size: 1.1rem;
+    .navbar-brand {
+        font-size: 1rem; /* 縮小品牌名稱字體大小 */
     }
 
-    .cta-button {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem; /* 縮小漢堡菜單按鈕 */
     }
 
-    .skill-cards, .project-grid {
-        grid-template-columns: 1fr;
+    .navbar-toggler-icon {
+        width: 1rem; /* 縮小漢堡菜單圖標 */
+        height: 1rem;
     }
 
-    form {
-        width: 100%;
+    .nav-link {
+        font-size: 0.8rem; /* 縮小導航鏈接字體大小 */
+        padding: 0.3rem 0.5rem; /* 減少導航鏈接的內距 */
     }
 
-    .hero-content p {
-        font-size: 0.9rem;
+    .navbar-nav.ml-auto {
+        margin-left: 0; /* 移除左邊外距 */
+    }
+
+    .navbar-collapse {
+        text-align: center;
     }
 }
 
 /* 小型手機設備 (小於400px) */
 @media (max-width: 400px) {
-    .hero-content h1 {
-        font-size: 1.8rem;
+    .navbar {
+        padding: 0.5rem; /* 減少導航欄的內距 */
     }
 
-    .hero-content h2 {
-        font-size: 0.9rem;
+    .navbar-brand {
+        font-size: 0.8rem; /* 進一步縮小品牌名稱字體大小 */
     }
 
-    h2 {
-        font-size: 1.6rem;
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem; /* 進一步縮小漢堡菜單按鈕 */
     }
 
-    .hero-content p {
-        font-size: 0.8rem;
+    .navbar-toggler-icon {
+        width: 0.8rem; /* 進一步縮小漢堡菜單圖標 */
+        height: 0.8rem;
     }
 
-    .cta-button {
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
+    .nav-link {
+        font-size: 0.7rem; /* 進一步縮小導航鏈接字體大小 */
+        padding: 0.2rem 0.4rem; /* 進一步減少導航鏈接的內距 */
     }
 }
 

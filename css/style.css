@@ -194,9 +194,113 @@ h2 {
     margin-bottom: 20px;
     width: 100%; /* 确保卡片宽度 */
 }
+/* 教育部分的整體樣式 */
+.education {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+/* 教育卡片容器 */
+.education-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* 卡片之間的間距 */
+}
 
+/* 單個教育卡片樣式 */
+.education-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
 
+/* 卡片內容布局 */
+.card-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 圖片容器樣式 */
+.card-image {
+    flex: 0 0 30%; /* 圖片佔整體寬度的 30% */
+    padding: 20px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* 卡片信息樣式 */
+.card-info {
+    flex: 1;
+    padding: 20px;
+}
+
+/* 標題樣式 */
+.card-info h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* 段落樣式 */
+.card-info p {
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-image {
+        flex: 0 0 100%;
+        padding: 20px 20px 0;
+    }
+}
+
+/* 證書部分特定樣式 */
+.certifications {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.certification-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.certification-card .card-image img {
+    max-height: 200px; /* 控制證書圖片的最大高度 */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Lightbox 相關樣式 */
+.certification-card .card-image a {
+    display: block;
+    text-align: center;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .certification-card .card-content {
+        flex-direction: column;
+    }
+
+    .certification-card .card-image {
+        margin-bottom: 20px;
+    }
+}
 .experience {
     max-width: 800px;
     margin: 0 auto;
