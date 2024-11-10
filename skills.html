@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,98 +12,117 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">George</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- 導航欄將通過 JavaScript 動態加載 -->
     </header>
-    <main class="container main-header mt-5">
-        <h1 class="text-center">Skills & Expertise</h1>
-        <section id="technical-skills" class="my-5">
-            <h2>Technical Skills</h2>
-            <li class="media my-3">
-                <i class="fas fa-project-diagram fa-2x mr-3"></i>
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Multi-party Collaboration and Project Management</h5>
+    <main class="main-content">
+        <div class="container">
+            <h1 class="section-title text-center mb-5">Professional Expertise</h1>
+            
+            <!-- 核心專業技能 -->
+            <section class="skill-section mb-5">
+                <h2 class="subsection-title">Core Medical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Oncology Pharmacy</h3>
+                        <ul class="skill-details">
+                            <li>Chemotherapy Protocol Management</li>
+                            <li>Medication Safety Monitoring</li>
+                            <li>Drug Interaction Analysis</li>
+                        </ul>
+                        <div class="proficiency-level">
+                            <div class="progress" style="width: 95%"></div>
+                            <span>Expert Level</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Clinical Consultation</h3>
+                        <ul class="skill-details">
+                            <li>Patient Education & Counseling</li>
+                            <li>Treatment Plan Optimization</li>
+                            <li>Side Effect Management</li>
+                        </ul>
+                        <div class="proficiency-level">
+                            <div class="progress" style="width: 90%"></div>
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Healthcare Analytics</h3>
+                        <ul class="skill-details">
+                            <li>Clinical Data Analysis</li>
+                            <li>Treatment Outcome Assessment</li>
+                            <li>Quality Metrics Evaluation</li>
+                        </ul>
+                        <div class="proficiency-level">
+                            <div class="progress" style="width: 85%"></div>
+                            <span>Proficient</span>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <ul class="list-unstyled">
-                 
-               
-                
-                <li class="media my-3">
-                    <i class="fas fa-code fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Programming (Beginner)</h5>
+            </section>
+
+            <!-- 業務技能 -->
+            <section class="skill-section mb-5">
+                <h2 class="subsection-title">Business Development Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Stakeholder Management</h3>
+                        <ul class="skill-details">
+                            <li>Healthcare Professional Relations</li>
+                            <li>Cross-functional Collaboration</li>
+                            <li>Client Need Assessment</li>
+                        </ul>
                     </div>
-                </li>
-                 
-                <li class="media my-3">
-                    <i class="fas fa-database fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Data Structuring</h5>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Medical Communication</h3>
+                        <ul class="skill-details">
+                            <li>Scientific Presentation</li>
+                            <li>Product Training</li>
+                            <li>Clinical Evidence Communication</li>
+                        </ul>
+                        
                     </div>
-                </li>
-            </ul>
-        </section>
-        <section id="soft-skills" class="my-5">
-            <h2>Soft Skills</h2>
-            <ul class="list-unstyled">
-                <li class="media my-3">
-                    <i class="fas fa-lightbulb fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Problem-solving Abilities</h5>
+                </div>
+            </section>
+
+            <!-- 專業認證 -->
+            <section class="skill-section">
+                <h2 class="subsection-title">Professional Certifications</h2>
+                <div class="certification-grid">
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Licensed Pharmacist</h3>
+                        <p>Taiwan Ministry of Health and Welfare</p>
+                        <span class="year">Since 2018</span>
                     </div>
-                </li>
-                <li class="media my-3">
-                    <i class="fas fa-handshake fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Multidisciplinary  Collaboration</h5>
+                    
+                    <div class="certification-card">
+                        <i class="fas fa-language"></i>
+                        <h3>TOEIC Score: 780</h3>
+                        <p>English Language Proficiency</p>
+                        <span class="year">2024</span>
                     </div>
-                </li>
-                <li class="media my-3">
-                    <i class="fas fa-comments fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Effective Communication Skills</h5>
-                    </div>
-                </li>
-                <li class="media my-3">
-                    <i class="fas fa-users fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Teamwork</h5>
-                    </div>
-                </li>
-               
-                <li class="media my-3">
-                    <i class="fas fa-clock fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Time Management</h5>
-                    </div>
-                </li>
-                <li class="media my-3">
-                    <i class="fas fa-tasks fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Project Management</h5>
-                    </div>
-                </li>
-               
-                <li class="media my-3">
-                    <i class="fas fa-heartbeat fa-2x mr-3"></i>
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Patient Education and Health Promotion</h5>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="text-center mt-5">
         <p>Copyright © 2024 George Hsiao. All rights reserved.</p>

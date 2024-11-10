@@ -33,6 +33,16 @@
     .skill-cards, .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .navbar {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+    }
+
+    .section-padding {
+        padding: 3rem 0;
+    }
 }
 @media (max-width: 768px) {
     header {
@@ -78,6 +88,31 @@
 
     h2 {
         font-size: 1.8rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        padding-top: 60px; /* 較小的上邊距 */
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 /* 手機設備 (小於576px) */
@@ -177,5 +212,38 @@
 
     .hero-content h2 {
         font-size: 2.2rem;
+    }
+}
+
+/* 更新導航欄的響應式樣式 */
+@media (max-width: 991px) {
+    .navbar .container {
+        width: 90%;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        width: 95%;
+    }
+    
+    .brand-text {
+        font-size: 1.2rem;
+    }
+    
+    .nav-link {
+        padding: 0.4rem 0.8rem;
     }
 }

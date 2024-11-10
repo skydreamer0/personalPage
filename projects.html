@@ -1,198 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | George</title>
+    <title>Projects | George Hsiao</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <style>
-        .thumbnail {
-            width: 150px; /* 設置縮圖的寬度 */
-            height: auto; /* 保持圖像比例 */
-            transition: transform 0.3s ease; /* 縮放效果過渡 */
-        }
-        .thumbnail:hover {
-            transform: scale(1.1); /* 滑鼠懸停時放大效果 */
-        }
-        .lightbox-back-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
-
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">George</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- 導航欄將通過 JavaScript 動態加載 -->
     </header>
-    
-    <main class="container main-header mt-5">
-        
-        <h1 class="text-center">Projects</h1>
 
-        <section class="project mb-5">
-            <h2 class="project-title"><i class="fas fa-chart-line fa-3x-alt"></i>  Poster Presentation at ISPOR Conference 2022</h2>
-            <p class="project-description">Topic:“Effectiveness Analysis of CPOE Implementation in Preventing Duplicate Medication: An Evidence From a Single Medical Center in Taiwan” </p>
-            <p class="project-description"> </p>
-            
-            <ul class="project-details">
-                <li>Emphasized the critical role of pharmacists in establishing CPOE and their intervention in enhancing medication safety.</li>
-                
-            </ul>
-            <div class="project-photos">
-                <a href="images/ISPOR.jpg" data-lightbox="ISPOR" data-title="ISPOR 1">
-                    <img src="images/ISPOR.jpg" alt="ISPOR 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/ISPORME.jpg" data-lightbox="ISPOR" data-title="ISPOR 2">
-                    <img src="images/ISPORME.jpg" alt="ISPOR 2" class="img-fluid thumbnail">
-                </a>
-            </div>
-           
-        </section>
-        
-        <section class="project mb-5">
-            <h2 class="project-title"> <i class="fas fa-sync-alt"></i>  Quality Control Circle（QCC）</h2>
-            <h2 class="project-title"> </i>  Revamped Chemotherapy Dispensing Workflow</h2>
-            <p class="project-description">Participated in an multidisciplinary QCC initiative to improve the TACE chemotherapy medication dispensing workflow.  </p>
-            <ul class="project-details">
-            
-                <li>Eliminated supervisors' account reconciliation time by 100%.</li>
-                <li>Achieved a 30% reduction in processing time.</li>
-            </ul>
-    
-            <div class="project-photos">
-                <a href="images/QCC.png" data-lightbox="QCC" data-title="QCC優化流程">
-                    <img src="images/QCC.png" alt="QCC 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/QCC2.png" data-lightbox="QCC" data-title="QCC優化後領用流程">
-                    <img src="images/QCC2.png" alt="QCC 2" class="img-fluid thumbnail">
-                </a>
-            </div>
-        </section>
-        
-        <section class="project mb-5">
-            <h2 class="project-title"><i class="fas fa-warehouse fa-3x-alt"></i>  
-                Integrated Inventory Management Optimization System</h2>
-            <p class="project-description">Leveraged generative AI to condense operational workflows from ten steps to two, earning widespread acclaim.</p>
-            <ul class="project-details">
-                <li>Boosted efficiency by 80%</li>        
-                <li>Successfully used for over 200 days with more than 7,000 uses</li>
-            </ul>
-            <div class="project-photos">
-                <a href="images/SOWS.png" data-lightbox="SOWS" data-title="庫存程序介面">
-                    <img src="images/SOWS.png" alt="SOWS 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/SOWS2.png" data-lightbox="SOWS" data-title="網頁版介面">
-                    <img src="images/SOWS2.png" alt="SOWS2" class="img-fluid thumbnail">
-                </a>
-            </div>
-        </section>
-        
-        <section class="project mb-5">
-            <h2 class="project-title"><i class="fas fa-calculator fa-3x-alt"></i>  Automated Chemotherapy Medication Tracking System</h2>
-            <p class="project-description">Utilized generative AI to streamline operational workflows automates the calculation and printing of chemotherapy medication tracking sheets and patient labels.</p>
+    <main class="main-content">
+        <div class="container">
+            <section class="projects-hero">
+                <h1>Healthcare Innovation Projects</h1>
+                <p class="projects-intro">Transforming Healthcare Through Innovation and Technology</p>
+            </section>
 
-            </p>
-            <ul class="project-details">
-                <li>Increased Efficiency up to 90%</li>
-                <li>Automated calculation reduces human errors</li>
-                <li>Enhanced patient medication safety</li>
-            </ul>
-            <div class="project-photos">
-                <a href="images/INFUSOR1.jpg" data-lightbox="INFUSOR" data-title="化療奶瓶">
-                    <img src="images/INFUSOR1.jpg" alt="Project photo 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/INFUSOR2.jpg" data-lightbox="INFUSOR" data-title="原始作業流程">
-                    <img src="images/INFUSOR2.jpg" alt="Project photo 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/INFUSOR3.jpg" data-lightbox="INFUSOR" data-title="解決方案">
-                    <img src="images/INFUSOR3.jpg" alt="Project photo 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/INFUSOR4.jpg" data-lightbox="INFUSOR" data-title="奶瓶程序輸入介面">
-                    <img src="images/INFUSOR4.jpg" alt="Project photo 1" class="img-fluid thumbnail">
-                </a>    
+            <div class="projects-grid">
+                <!-- 臨床數據整合專案 -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-bar project-icon"></i>
+                        <h2>Intelligent Clinical Data Integration Solution</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Revolutionized clinical data management through AI-powered automation and visualization.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-clock"></i>
+                                    <span>90% Time Reduction</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-database"></i>
+                                    <span>Structured Data Format</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Reduced processing time from 15 to 1 minute per patient</li>
+                                <li>Established structured benchmark for data utilization</li>
+                                <li>Enhanced clinical decision-making efficiency</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/CDIS1.png" data-lightbox="CDIS" data-title="臨床程序介面">
+                                <img src="images/CDIS1.png" alt="CDIS Interface" class="project-image">
+                            </a>
+                            <a href="images/CDIS2.png" data-lightbox="CDIS" data-title="篩選所需檢驗數值">
+                                <img src="images/CDIS2.png" alt="Data Filtering" class="project-image">
+                            </a>
+                            <a href="images/CDIS3.png" data-lightbox="CDIS" data-title="圖表化病患資料">
+                                <img src="images/CDIS3.png" alt="Patient Data Visualization" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 化療流程優化專案 -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-sync-alt project-icon"></i>
+                        <h2>Chemotherapy Workflow Optimization</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Led a comprehensive QCC initiative to streamline TACE chemotherapy medication workflow.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>30% Faster Processing</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>100% Error Reduction</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Eliminated supervisor reconciliation time</li>
+                                <li>Improved inventory management accuracy</li>
+                                <li>Enhanced patient safety protocols</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/QCC.png" data-lightbox="QCC" data-title="QCC優化流程">
+                                <img src="images/QCC.png" alt="QCC Process" class="project-image">
+                            </a>
+                            <a href="images/QCC2.png" data-lightbox="QCC" data-title="QCC優化後領用流程">
+                                <img src="images/QCC2.png" alt="Optimized Process" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ISPOR 研究專案 -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-microscope project-icon"></i>
+                        <h2>ISPOR Research Project</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Conducted research on CPOE implementation effectiveness in preventing duplicate medication orders.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Research Publication</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-users"></i>
+                                    <span>International Conference</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Analyzed medication order patterns and system effectiveness</li>
+                                <li>Presented findings at ISPOR conference</li>
+                                <li>Contributed to hospital safety protocols</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/ISPOR.jpg" data-lightbox="ISPOR" data-title="ISPOR Conference Presentation">
+                                <img src="images/ISPOR.jpg" alt="ISPOR Conference" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CPR 認證專案 -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-heartbeat project-icon"></i>
+                        <h2>CPR Certification Program</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Organized and coordinated a large-scale CPR certification program in collaboration with the Ministry of Education.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>125+ Certified</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Red Cross Partnership</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Successfully certified over 125 participants</li>
+                                <li>Coordinated with Red Cross instructors</li>
+                                <li>Managed program logistics and scheduling</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/CPR1.png" data-lightbox="CPR" data-title="CPR Training Session">
+                                <img src="images/CPR1.png" alt="CPR Training" class="project-image">
+                            </a>
+                            <a href="images/CPR.jpg" data-lightbox="CPR" data-title="CPR Certification Event">
+                                <img src="images/CPR.jpg" alt="CPR Event" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 學術報紙專案 -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-newspaper project-icon"></i>
+                        <h2>Academic Newspaper Initiative</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Founded and managed "仁者藥報", a departmental newspaper focused on pharmaceutical education and news.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-pen"></i>
+                                    <span>Editorial Leadership</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Knowledge Sharing</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Established editorial guidelines and content strategy</li>
+                                <li>Coordinated student contributors and content creation</li>
+                                <li>Enhanced department communication and knowledge sharing</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/newspaper.jpg" data-lightbox="newspaper" data-title="Academic Newspaper">
+                                <img src="images/newspaper.jpg" alt="Newspaper" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Patient Counseling Competition -->
+                <section class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-comments project-icon"></i>
+                        <h2>Patient Counseling Competition</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <p>Organized and led a cross-institutional competition to enhance clinical communication skills.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Competition Management</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Skill Development</span>
+                                </div>
+                            </div>
+                            <ul class="project-achievements">
+                                <li>Developed comprehensive training modules</li>
+                                <li>Coordinated with multiple institutions</li>
+                                <li>Enhanced participants' counseling abilities</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <a href="images/PCE (1).png" data-lightbox="PCE" data-title="Patient Counseling Event">
+                                <img src="images/PCE (1).png" alt="PCE Event" class="project-image">
+                            </a>
+                            <a href="images/PCE (2).png" data-lightbox="PCE" data-title="Competition Process">
+                                <img src="images/PCE (2).png" alt="PCE Process" class="project-image">
+                            </a>
+                            <a href="images/PCE (3).png" data-lightbox="PCE" data-title="Results Presentation">
+                                <img src="images/PCE (3).png" alt="PCE Results" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        
-        <section class="project mb-5">
-            <h2 class="project-title"><i class="fas fa-tags fa-3x-alt"></i>  Medication Labeling System</h2>
-            <p class="project-description">Entrusted by my supervisors to this project, collaborated with generative AI to develop an intuitive system that generates standardized pharmaceutical labels and incorporates QR code recognition.</p>
-            <ul class="project-details">
-                <li>Reduced label generation time by 50%</li>
-                <li>Enhanced quality of drug management</li>
-                <li>Ensured regulatory compliance for all labels.</li>
-                <li>Management recommended integrating this project into the vendor's label generation process</li>
-                
-            </ul>
-            <div class="project-photos">
-                <a href="images/label1.png" data-lightbox="Label" data-title="標籤程序介面">
-                    <img src="images/label1.png" alt="label 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/label2.png" data-lightbox="Label" data-title="生成之標籤">
-                    <img src="images/label2.png" alt="label 2" class="img-fluid thumbnail">
-                </a>
-            </div>
-        </section>
-        
-        <section class="project mb-5">
-            <h2 class="project-title"> <i class="fas fa-chart-bar fa-3x-alt"></i>  Intelligent Clinical Data Integration Solution</h2>
-            <p class="project-description">Collaborated with supervisors and clinical pharmacists. Utilized generative AI to convert unstructured electronic medical records into structured formats and leverages this data for Business Intelligence (BI) analysis.   
-                
-            </p>
-            <ul class="project-details">
-                <li>Reduces clinical pharmacists' workload by over 90%, cutting patient processing time from 15 minutes to less than 1 minute.</li>
-                <li>Establishes a structured benchmark for data utilization</li>
-            </ul>
-            <div class="project-photos">
-                <a href="images/CDIS1.png" data-lightbox="CDIS" data-title="臨床程序介面">
-                    <img src="images/CDIS1.png" alt="CDIS 1" class="img-fluid thumbnail">
-                </a>
-                <a href="images/CDIS2.png" data-lightbox="CDIS" data-title="篩選所需檢驗數值">
-                    <img src="images/CDIS2.png" alt="CDIS 2" class="img-fluid thumbnail">
-                </a>
-                <a href="images/CDIS3.png" data-lightbox="CDIS" data-title="圖表化病患資料">
-                    <img src="images/CDIS3.png" alt="CDIS 2" class="img-fluid thumbnail">
-                </a>
-            </div>
-        </section>
-        
+        </div>
     </main>
 
     <footer>
-        Copyright © 2024 George Hsiao. All rights reserved.
+        <p>Copyright © 2024 George Hsiao. All rights reserved.</p>
     </footer>
 
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <!-- Bootstrap JS -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <!-- Lightbox JavaScript -->
-     <script src="js/lightbox-plus-jquery.min.js"></script>
-     <!-- Main JavaScript -->
-     <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

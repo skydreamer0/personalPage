@@ -3,279 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Hsiao|MR Candidate</title>
+    <title>George Hsiao | MR Candidate</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
-        <style>
-        .thumbnail {
-            width: 150px; /* 設置縮圖寬度 */
-            height: auto; /* 保持圖像比例 */
-            transition: transform 0.3s ease; /* 縮放效果過渡 */
-        }
-        .thumbnail:hover {
-            transform: scale(1.1); /* 滑鼠懸停時放大效果 */
-        }
-        .lightbox-back-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        .project-photos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: flex-start;
-        }
-        .project-photos a {
-            flex: 0 0 auto;
-        }
-        .project-photos img {
-            width: 150px; /* 與 .thumbnail 的寬度一致 */
-            height: auto;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
     <header>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">George</a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="basic.html">basic</a></li>
-             
-                </ul>
-            </div>
-        </nav>
+        <!-- 導航欄將通過 JavaScript 動態加載 -->
     </header>
-    <main>
+    <main class="main-content">
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>George Hsiao</h1>
-                <h2>Pharmacist | MR Candidate</h2>
-                <p>Combining pharmaceutical expertise with AI </p>
-                <p>to pioneer innovative healthcare solutions </p>
+                <h2>Medical Representative | Clinical Pharmacist</h2>
+                <div class="hero-description">
+                    <p>Bridging Healthcare Innovation & Clinical Excellence</p>
+                    <p>Specialized in Oncology & Healthcare Technology Integration</p>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Clinical Expertise</span>
+                        <small>5+ Years Experience</small>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-flask"></i>
+                        <span>Oncology Specialist</span>
+                        <small>Chemotherapy Expert</small>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Innovation Leader</span>
+                        <small>AI Integration</small>
+                    </div>
+                </div>
                 <a href="#contact" class="cta-button">Contact Me</a>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="image-container">
-                    <img src="images/personalImage.jpg" alt="George Hsiao" class="profile-photo">
-                </div>
-                <div class="text-content">
-                    <p>．Pharmacist with over 5 years of experience in a medical center.</p>
-                    <p>．Proactive and solutions-oriented, skilled in identifying issues and leveraging resources to drive effective team collaboration and problem-solving.</p>
-                    <p>．Extensive experience in multidisciplinary teamwork and leadership roles.</p>
-                    <p>．Successfully organized and led initiatives such as publication development, mass CPR certification exams, beach clean-up events, and various competitions.</p>
-
-                    
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="image-container">
+                        <img src="images/personalImage.jpg" alt="George Hsiao" class="profile-photo">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>George Hsiao</h3>
+                                <p>Medical Representative | Clinical Pharmacist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-content">
+                        <div class="professional-summary">
+                            <h3>Professional Summary</h3>
+                            <p>Experienced Clinical Pharmacist transitioning to Medical Representative role, combining deep healthcare knowledge with business acumen.</p>
+                        </div>
+                        
+                        <div class="key-highlights">
+                            <div class="highlight-box">
+                                <i class="fas fa-hospital-user"></i>
+                                <div class="highlight-text">
+                                    <h4>Clinical Expertise</h4>
+                                    <p>5+ years experience in medical center, specializing in chemotherapy and oncology care</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="highlight-text">
+                                    <h4>Innovation Drive</h4>
+                                    <p>Led multiple healthcare technology integration projects, improving efficiency by up to 80%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-box">
+                                <i class="fas fa-users"></i>
+                                <div class="highlight-text">
+                                    <h4>Leadership & Collaboration</h4>
+                                    <p>Proven track record in cross-functional team leadership and stakeholder management</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="core-competencies">
+                            <h3>Core Competencies</h3>
+                            <ul class="competencies-list">
+                                <li><i class="fas fa-check-circle"></i> Healthcare Communication</li>
+                                <li><i class="fas fa-check-circle"></i> Clinical Data Analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Project Management</li>
+                                <li><i class="fas fa-check-circle"></i> Process Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="experience">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <!-- 使用時間軸樣式展示工作經驗 -->
-                <div class="timeline-item">
-                    <div class="date"><i class="fas fa-calendar-alt"></i> March 2019 - July 2024</div>
-           
-                    <div class="card">
-                        <h3>Pharmacist - Linkou Chang Gung Memorial Hospital</h3>
-                        
+        <section id="achievements-stats" class="achievements-stats">
+            <h2>Professional Impact</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Years in Medical Center</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="80">0</div>
+                    <div class="stat-label">Process Efficiency Improvement (%)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="125">0</div>
+                    <div class="stat-label">Healthcare Professionals Trained</div>
+                </div>
+            </div>
+        </section>
 
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Guishan District, Taoyuan City, Taiwan</p>
-                        <p class="department">Department: Chemotherapy Pharmacy Department (Oct 2021 - July 2024)</p>
-                        <ul class="achievements">
-                            <li class="achievement">
-                                <i class="fas fa-chart-line"></i>
-                                <strong>  Poster Presentation at ISPOR Conference 2022</strong>
-                                <p>Effectiveness Analysis of CPOE Implementation in Preventing Duplicate Medication</p>
-                            </li>
-                            <li class="achievement">
-                                <i class="fas fa-sync-alt"></i>
-                                <strong>  Quality Control Circle: Revamped Chemotherapy Dispensing Process</strong>
-                                <p>Improved TACE chemotherapy medication dispensing process, mitigating inventory losses</p>
-                            </li>
-                
-                            <li class="achievement">
-                                <i class="fas fa-robot"></i>
-                                <strong>  Streamlined Operational Workflow System</strong>
-                                <p>Utilized generative AI to streamline operational workflows from ten steps to two.</p>
-                                <p class="result">Result: Boosted efficiency by 80%, significantly reduced processing time, and received widespread acclaim.</p>
-                            </li>
-                            <li class="achievement">
-                                <i class="fas fa-folder-open"></i>
-                                <strong>  Clinical Data Structuring Initiative</strong>
-                                <p>Collaborated with supervisors and clinical pharmacists to develop a system using generative AI technology to convert unstructured electronic medical records into structured, accessible formats.</p>
-                                <p class="result">Result: Enhanced clinical pharmacists' efficiency by providing quick access to critical patient data in visual and structured formats.</p>
-                            </li>
-                    </ul>
-                    
-                </div>
-                <div class="timeline-item">
-                    <div class="date"><i class="fas fa-calendar-alt"></i> October 2018 - February 2019</div>
-                    <div class="card">
-                        <h3>Conscription - The Republic of China Army</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Tainan City, Taiwan</p>
-                        <!-- 這段工作經驗沒有 achievements，所以省略 -->
-                    </div>
-                </div>
-        
-                <div class="timeline-item">
-                    <div class="date"><i class="fas fa-calendar-alt"></i> June 2016 - October 2016</div>
-                    <div class="card">
-                        <h3>Pharmacy Intern - Kuo General Hospital</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Tainan City, Taiwan</p>
-                        <!-- 這段工作經驗沒有 achievements，所以省略 -->
-                    </div>
-                </div>
-        
-                <div class="timeline-item">
-                    <div class="date"><i class="fas fa-calendar-alt"></i> September 2014 - July 2015</div>
-          
-                    <div class="card">
-                        <h3>Dean Of Student Affairs - Tajen University Pharmaceutical Students' Association (TPSA)</h3>
-                       
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Pingtung City, Taiwan</p>
-                        <ul class="achievements">
-                            <li class="achievement">
-                                <i class="fas fa-heart"></i>
-                                <strong>CPR Certification Program Coordination</strong>
-                                <p>Orchestrated a CPR Certification Program in strategic collaboration with the Ministry of Education. Invited Red Cross instructors for expert guidance, successfully certifying over 125 participants.</p>
-                                
-                                <div class="project-photos">
-                                <a href="images/CPR1.png" data-lightbox="CPR" data-title="CPR">
-                                    <img src="images/CPR1.png" alt="CPR" class="img-fluid thumbnail">
-                                </a>
-                                <a href="images/CPR.jpg" data-lightbox="CPR" data-title="CPR">
-                                    <img src="images/CPR.jpg" alt="CPR" class="img-fluid thumbnail">
-                                </a>
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <!-- 長庚醫院經驗 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-hospital-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <div class="role-info">
+                                        <h3>Clinical Pharmacist</h3>
+                                        <span class="company-name">Linkou Chang Gung Memorial Hospital</span>
+                                    </div>
+                                    <div class="timeline-period">
+                                        <div class="period-badge">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span>March 2019 - July 2024</span>
+                                        </div>
+                                        <div class="department-badge">
+                                            <i class="fas fa-hospital-alt"></i>
+                                            <span>Chemotherapy Pharmacy Department</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            </li>
-                            <li class="achievement">
-                                <i class="fas fa-newspaper"></i>
-                                <strong>Academic Newspaper Founder</strong>
-                                
-                                <p>Established "仁者藥報," an academic departmental newspaper serving as an informational hub for students, disseminating academic insights, departmental news, and events.</p>
-                                <a href="images/newspaper.jpg" data-lightbox="newspaper" data-title="newspaper">
-                                    <img src="images/newspaper.jpg" alt="newspaper" class="img-fluid thumbnail">
-                                </a>
-                            </li>
-                            
-                            <li class="achievement">
-                                <i class="fas fa-user-md"></i>
-                                <strong>Patient Counseling Exam Organizer</strong>
-                                <p>Spearheaded the "Patient Counseling Exam," devising comprehensive training modules and organizing a cross-institutional competition to elevate clinical communication skills.</p>
-                                
-                                <div class="project-photos">
-                                    <a href="images/PCE (1).png" data-lightbox="PCE" data-title="PCE">
-                                        <img src="images/PCE (1).png" alt="PCE" class="img-fluid thumbnail">
-                                    </a>
-                                    <a href="images/PCE (2).png" data-lightbox="PCE" data-title="PCE">
-                                        <img src="images/PCE (2).png" alt="PCE" class="img-fluid thumbnail">
-                                    </a>
-                                    <a href="images/PCE (3).png" data-lightbox="PCE" data-title="PCE">
-                                        <img src="images/PCE (3).png" alt="PCE" class="img-fluid thumbnail">
-                                    </a>
+                            <div class="achievement-list">
+                                <!-- ISPOR Conference Achievement -->
+                                <div class="achievement-item">
+                                    <div class="achievement-header">
+                                        <i class="fas fa-chart-line achievement-icon"></i>
+                                        <div>
+                                            <h4 class="achievement-title">ISPOR Conference Research Presentation</h4>
+                                            <p>Effectiveness Analysis of CPOE Implementation in Preventing Duplicate Medication</p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-metrics">
+                                        <span class="metric">
+                                            <i class="fas fa-chart-bar"></i>
+                                            Data Analysis
+                                        </span>
+                                        <span class="metric">
+                                            <i class="fas fa-users"></i>
+                                            International Presentation
+                                        </span>
+                                    </div>
                                 </div>
-                            </li>
-                           
-                        </ul>
+
+                                <!-- QCC Initiative -->
+                                <div class="achievement-item">
+                                    <div class="achievement-header">
+                                        <i class="fas fa-sync-alt achievement-icon"></i>
+                                        <div>
+                                            <h4 class="achievement-title">Workflow Optimization Project</h4>
+                                            <p>Led QCC initiative to streamline TACE chemotherapy medication workflow</p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-metrics">
+                                        <span class="metric">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            30% Efficiency Boost
+                                        </span>
+                                        <span class="metric">
+                                            <i class="fas fa-check-circle"></i>
+                                            Zero Error Rate
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- AI Integration -->
+                                <div class="achievement-item">
+                                    <div class="achievement-header">
+                                        <i class="fas fa-robot achievement-icon"></i>
+                                        <div>
+                                            <h4 class="achievement-title">AI-Powered Workflow Automation</h4>
+                                            <p>Implemented AI solutions to streamline operational processes</p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-metrics">
+                                        <span class="metric">
+                                            <i class="fas fa-clock"></i>
+                                            80% Time Saved
+                                        </span>
+                                        <span class="metric">
+                                            <i class="fas fa-chart-line"></i>
+                                            Improved Efficiency
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 兵役經驗 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <div class="role-info">
+                                        <h3>Military Service</h3>
+                                        <span class="company-name">The Republic of China Army</span>
+                                    </div>
+                                    <div class="timeline-period">
+                                        <div class="period-badge">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span>October 2018 - February 2019</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 實習經驗 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-clinic-medical"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <div class="role-info">
+                                        <h3>Pharmacy Intern</h3>
+                                        <span class="company-name">Kuo General Hospital</span>
+                                    </div>
+                                    <div class="timeline-period">
+                                        <div class="period-badge">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span>June 2016 - October 2016</span>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TPSA 經驗 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <div class="role-info">
+                                        <h3>Dean Of Student Affairs</h3>
+                                        <span class="company-name">Tajen University Pharmaceutical Students' Association (TPSA)</span>
+                                    </div>
+                                    <div class="timeline-period">
+                                        <div class="period-badge">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span>September 2014 - July 2015</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <i class="fas fa-heart"></i>
+                                    <div class="achievement-content">
+                                        <h5>CPR Certification Program Coordination</h5>
+                                        <p>Orchestrated a CPR Certification Program in strategic collaboration with the Ministry of Education. Invited Red Cross instructors for expert guidance, successfully certifying over 125 participants.</p>
+                                        <div class="project-photos">
+                                            <a href="images/CPR1.png" data-lightbox="CPR" data-title="CPR">
+                                                <img src="images/CPR1.png" alt="CPR" class="thumbnail">
+                                            </a>
+                                            <a href="images/CPR.jpg" data-lightbox="CPR" data-title="CPR">
+                                                <img src="images/CPR.jpg" alt="CPR" class="thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="achievement-item">
+                                    <i class="fas fa-newspaper"></i>
+                                    <div class="achievement-content">
+                                        <h5>Academic Newspaper Founder</h5>
+                                        <p>Established "仁者藥報," an academic departmental newspaper serving as an informational hub for students, disseminating academic insights, departmental news, and events.</p>
+                                        <div class="project-photos">
+                                            <a href="images/newspaper.jpg" data-lightbox="newspaper" data-title="newspaper">
+                                                <img src="images/newspaper.jpg" alt="newspaper" class="thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="achievement-item">
+                                    <i class="fas fa-user-md"></i>
+                                    <div class="achievement-content">
+                                        <h5>Patient Counseling Exam Organizer</h5>
+                                        <p>Spearheaded the "Patient Counseling Exam," devising comprehensive training modules and organizing a cross-institutional competition to elevate clinical communication skills.</p>
+                                        <div class="project-photos">
+                                            <a href="images/PCE (1).png" data-lightbox="PCE" data-title="PCE">
+                                                <img src="images/PCE (1).png" alt="PCE" class="thumbnail">
+                                            </a>
+                                            <a href="images/PCE (2).png" data-lightbox="PCE" data-title="PCE">
+                                                <img src="images/PCE (2).png" alt="PCE" class="thumbnail">
+                                            </a>
+                                            <a href="images/PCE (3).png" data-lightbox="PCE" data-title="PCE">
+                                                <img src="images/PCE (3).png" alt="PCE" class="thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="education">
-            <h2>Education</h2>
-            <div class="education-cards">
-                <div class="education-card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <img src="images/university_logo.png" alt="大仁科技大學標誌">
+        <section id="education-certifications" class="education-certifications">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap section-icon"></i>
+                    Education & Certifications
+                </h2>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <!-- 教育背景 -->
+                    <div class="col-lg-6">
+                        <div class="subsection-header">
+                            <i class="fas fa-university subsection-icon"></i>
+                            <h3 class="subsection-title">Education</h3>
                         </div>
-                        <div class="card-info">
-                            <h3>大仁科技大學</h3>
-                            <p>Bachelor of Pharmacy - BPharm, Pharmacy</p>
-                            <p>2013 - 2018</p>
-                            <p>Activities and Societies：Pharmacy Students' Association, Numerology Society, Swimming Club</p>
+                        <div class="timeline-cards">
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <img src="images/university_logo.png" alt="大仁科技大學標誌">
+                                    <div class="header-content">
+                                        <h4>大仁科技大學</h4>
+                                        <span class="year">2013 - 2018</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="degree">Bachelor of Pharmacy - BPharm, Pharmacy</p>
+                                    <p class="activities">Activities: Pharmacy Students' Association, Numerology Society, Swimming Club</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <img src="images/tainan_high_school_logo.png" alt="台南一中標誌">
+                                    <div class="header-content">
+                                        <h4>台南一中</h4>
+                                        <span class="year">2010 - 2013</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="role">Chief Operations Officer | Biology Club</p>
+                                    <p class="activities">Activities: Biology Club social media editor, photography and data preservation</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="education-card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <img src="images/tainan_high_school_logo.png" alt="台南一中標誌">
+                    
+                    <!-- 證照認證 -->
+                    <div class="col-lg-6">
+                        <div class="subsection-header">
+                            <i class="fas fa-certificate subsection-icon"></i>
+                            <h3 class="subsection-title">Certifications</h3>
                         </div>
-                        <div class="card-info">
-                            <h3>台南一中</h3>
-                            <p>Senior High School</p>
-                            <p>2010 - 2013</p>
-                            <p>Activities and Societies：Biology Club</p>
-                            <p>Chief Operations Officer | Biology Club social media editor, photography and data preservation</p>
+                        <div class="cert-cards">
+                            <div class="cert-card">
+                                <a href="images/License.png" data-lightbox="cert" class="cert-image">
+                                    <img src="images/License.png" alt="Pharmacist License">
+                                </a>
+                                <div class="cert-info">
+                                    <h4>Pharmacist License</h4>
+                                    <p>September 2018</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-card">
+                                <a href="images/TOEIC.jpg" data-lightbox="cert" class="cert-image">
+                                    <img src="images/TOEIC.jpg" alt="TOEIC Score">
+                                </a>
+                                <div class="cert-info">
+                                    <h4>TOEIC</h4>
+                                    <p>June 2024</p>
+                                    <p class="score">Score: 780</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="certifications" class="certifications">
-            <h2>Certification</h2>
-            <div class="certification-cards">
-                <div class="certification-card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <a href="images/License.png" data-lightbox="PharmacistLicense" data-title="Pharmacist License">
-                                <img src="images/License.png" alt="Pharmacist License" class="img-fluid thumbnail">
-                            </a>
-                        </div>
-                        <div class="card-info">
-                            <h3>Pharmacist License</h3>
-                            <p>September 2018</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="certification-card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <a href="images/TOEIC.jpg" data-lightbox="TOEIC" data-title="TOEIC Score">
-                                <img src="images/TOEIC.jpg" alt="TOEIC" class="img-fluid thumbnail">
-                            </a>
-                        </div>
-                        <div class="card-info">
-                            <h3>TOEIC</h3>
-                            <p>June 2024</p>
-                            <p>Grade: 780</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
 
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
@@ -294,19 +438,8 @@
     </main>
 
     <footer>
-        Copyright © 2024 George Hsiao. All rights reserved.
+        <p>Copyright © 2024 George Hsiao. All rights reserved.</p>
     </footer>
-  <script>
-    new Vue({
-        el: '#app',
-        data: {
-        // 這裡定義您的數據
-        },
-        methods: {
-        // 這裡定義您的方法
-        }
-    })
-    </script>
   <!-- Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <!-- jQuery -->
@@ -316,6 +449,6 @@
   <!-- Lightbox JavaScript -->
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <!-- Main JavaScript -->
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
